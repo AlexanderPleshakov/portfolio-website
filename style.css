@@ -113,6 +113,7 @@ html {
    font-family: Helvetica;
    color: #1a1a1a;
    font-size: 24px;
+   scroll-behavior: smooth;
 }
 
 /*-------------Header---------------*/
@@ -164,10 +165,22 @@ header {
    color: rgb(0, 0, 0);
    font-size: 26px;
    font-weight: bold;
-   text-decoration: underline;
 
    margin-right: 40px;
+   text-decoration: underline;
 }
+
+.header-links-blok a:hover {
+   text-decoration: none;
+}
+
+/* .header-link {
+   text-decoration: underline;
+}
+
+.header-link :hover {
+   text-decoration: none;
+} */
 
 /*-------------About me---------------*/
 
