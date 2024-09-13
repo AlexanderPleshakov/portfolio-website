@@ -235,3 +235,33 @@ ul li {
    font-weight: bold;
    margin-bottom: 5px;
 }
+
+/*-------------Footer---------------*/
+
+footer {
+   background-color: #e6e6e6;
+   padding: 20px 100px;
+   text-align: left;
+   border-top: 2px solid #ccc;
+   margin-top: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+footer p {
+   margin: 5px 0;
+   font-size: 14px;
+   color: #333;
+}
+
+footer a {
+   font-weight: bold;
+   text-decoration: none;
+   color: black;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
