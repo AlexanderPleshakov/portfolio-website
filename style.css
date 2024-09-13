@@ -45,11 +45,6 @@ p {
    font-weight: inherit;
 }
 
-ul,
-ul li {
-   list-style: none;
-}
-
 img {
    vertical-align: top;
 }
@@ -117,6 +112,7 @@ html {
    height: 100%;
    font-family: Helvetica;
    color: #1a1a1a;
+   font-size: 24px;
 }
 
 /*-------------Header---------------*/
@@ -171,4 +167,71 @@ header {
    text-decoration: underline;
 
    margin-right: 40px;
+}
+
+/*-------------About me---------------*/
+
+.about-me {
+   font-size: 24px;
+   width: 85vw;
+   margin: 40px auto;
+   font-weight: 400;
+}
+
+h2 {
+   font-size: 52px;
+   font-weight: bold;
+   margin-bottom: 40px;
+}
+
+.about-me p {
+   margin-bottom: 15px;
+}
+
+ul {
+   list-style-type: disc;
+   margin-left: 80px;
+   margin-bottom: 20px;
+}
+
+ul li {
+   line-height: 1.6;
+}
+
+/*-------------Projects---------------*/
+
+.projects {
+   margin: 0 auto;
+   width: 85vw;
+}
+
+
+.my-projects {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+}
+
+.card {
+   background-color: #e8e8e8;
+   border-radius: 15px;
+   padding: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   text-align: left;
+}
+
+.card h2 {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+.card p {
+   margin: 0;
+   font-size: 16px;
+}
+
+.card .stack {
+   font-weight: bold;
+   margin-bottom: 5px;
 }
