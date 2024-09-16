@@ -107,6 +107,24 @@ legend {
 
 /*-------------Style---------------*/
 
+:root {
+   --background-color: white;
+   --foreground-color: #1A1A1A;
+   --scondary-gray-color: rgba(26, 26, 26, 0.1);
+   --blue-color: #0256E7;
+   --dark-gray-color: #707070;
+   --overlay-dark-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark-theme {
+   --background-color: #1A1A1A;
+   --foreground-color: rgba(255, 255, 255, 0.9);
+   --scondary-gray-color: rgba(255, 255, 255, 0.1);
+   --blue-color: #0256E7;
+   --dark-gray-color: #707070;
+   --overlay-dark-color: rgba(255, 255, 255, 0.05);
+}
+
 body,
 html {
    height: 100%;
@@ -114,6 +132,12 @@ html {
    color: #1a1a1a;
    font-size: 24px;
    scroll-behavior: smooth;
+}
+
+body {
+   background-color: var(--background-color);
+   color: var(--foreground-color);
+   transition: background-color 0.3s, color 0.3s;
 }
 
 /*-------------Header---------------*/
@@ -130,6 +154,9 @@ header {
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: var(--background-color);
+   color: var(--foreground-color);
+   transition: background-color 0.3s, color 0.3s;
 }
 
 .header-overlay {
@@ -152,13 +179,15 @@ header {
 .header-nav {
    font-size: 26;
    font-weight: bold;
+   width: 90%;
 
    position: absolute;
-   top: 64px;
+   top: 48px;
    right: 100px;
 
-
    display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .header-links-blok a {
@@ -168,19 +197,14 @@ header {
 
    margin-right: 40px;
    text-decoration: underline;
+
+   color: var(--foreground-color);
+   transition: background-color 0.3s, color 0.3s;
 }
 
 .header-links-blok a:hover {
    text-decoration: none;
 }
-
-/* .header-link {
-   text-decoration: underline;
-}
-
-.header-link :hover {
-   text-decoration: none;
-} */
 
 /*-------------About me---------------*/
 
@@ -226,11 +250,14 @@ ul li {
 }
 
 .card {
-   background-color: #e8e8e8;
+   background-color: var(--scondary-gray-color);
+   color: var(--foreground-color);
    border-radius: 15px;
    padding: 20px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    text-align: left;
+
+   transition: background-color 0.3s, color 0.3s;
 }
 
 .card h2 {
@@ -261,18 +288,27 @@ footer {
    justify-content: space-between;
    align-items: center;
 
+   background-color: var(--scondary-gray-color);
+   color: var(--foreground-color);
+   transition: background-color 0.3s, color 0.3s;
 }
 
 footer p {
    margin: 5px 0;
    font-size: 14px;
    color: #333;
+
+   color: var(--foreground-color);
+   transition: background-color 0.3s, color 0.3s;
 }
 
 footer a {
    font-weight: bold;
    text-decoration: none;
    color: black;
+
+   color: var(--foreground-color);
+   transition: background-color 0.3s, color 0.3s;
 }
 
 footer a:hover {
