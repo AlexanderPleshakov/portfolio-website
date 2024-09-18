@@ -28,10 +28,16 @@
                <a href="https://github.com/AlexanderPleshakov">GitHub</a>
             </div>
          </nav>
+
          <div class="page-title-block">
             <p>Плешаков</p>
             <p>----Александр</p>
          </div>
+
+         <div class="developer-header">
+            <p>iOS - Developer</p>
+         </div>
+
       </div>
    </header>
 
@@ -55,34 +61,115 @@
             сервером.</p>
       </section>
 
-      <section class="projects" id="projects">
-         <h2>Мои проекты</h2>
-         <div class="my-projects">
-            <div class="card">
-               <h2>Event Collab</h2>
-               <p class="stack">Стек:</p>
-               <p>SwiftUI, Combine, MVVM, Protobuf, gRPC, Google API, iOS SDK, CI/CD, SPM, Async/Await</p>
+      <div class="slider">
+         <div class="slides">
+            <!-- Первый слайд -->
+            <div class="slide">
+               <div class="slide-content">
+                  <div class="slide-title">
+                     <h2>Event Collab</h2>
+                     <p>
+                        Приложение суть которого в том, что можно создать группу и пригласить туда людей, и заниматься
+                        совместной организацией мероприятия, учитывать расходы, распределять роли, составлять список
+                        покупок.
+                     </p>
+                  </div>
+
+                  <div class="slide-stack">
+                     <p>Стек:</p>
+                     <p class="stack-list">SwiftUI, Combine, MVVM, Protobuf, gRPC, Google API, iOS SDK, CI/CD,
+                        SPM, Async/Await</p>
+                  </div>
+               </div>
+               <div class="slide-image">
+                  <img src="assets/event collab.png" alt="Event Collab screenshot">
+               </div>
             </div>
 
-            <div class="card">
-               <h2>NFT Market</h2>
-               <p class="stack">Стек:</p>
-               <p>UIKit, MVP, SnapKit, REST API, GCD, SPM, Kingfisher, SwiftLint, GitFlow</p>
+            <!-- Второй слайд -->
+            <div class="slide">
+               <div class="slide-content">
+                  <div class="slide-title">
+                     <h2>NFT Market</h2>
+                     <p>
+                        Приложение помогает пользователям просматривать и покупать NFT (Non-Fungible Token). Функционал
+                        покупки иммитируется с помощью мокового сервера.
+                     </p>
+                  </div>
+
+                  <div class="slide-stack">
+                     <p>Стек:</p>
+                     <p class="stack-list">UIKit, MVP, SnapKit, REST API, GCD, SPM, Kingfisher, SwiftLint, GitFlow</p>
+                     <a href="" target="_blank">View on GitHub</a>
+                  </div>
+               </div>
+               <div class="slide-image">
+                  <img src="assets/fakeNFT.png" alt="Another Project screenshot">
+               </div>
             </div>
 
-            <div class="card">
-               <h2>Image Feed</h2>
-               <p class="stack">Стек:</p>
-               <p>UIKit, MVP, OAuth 2.0, REST API, GCD, SPM, Kingfisher, Unit/UI Testing, Auto Layout, WebView</p>
+            <!-- Третий слайд -->
+            <div class="slide">
+               <div class="slide-content">
+                  <div class="slide-title">
+                     <h2>Image Feed</h2>
+                     <p>
+                        Приложение использующее unsplash api с лентой фотографий и профилем, который содержит избранные
+                        фото. В приложении присутствует авторизация.
+                     </p>
+                  </div>
+
+                  <div class="slide-stack">
+                     <p>Стек:</p>
+                     <p class="stack-list">UIKit, MVP,OAuth 2.0, REST API, GCD, SPM, Kingfisher, Unit/UI Testing, Auto
+                        Layout, WebView</p>
+                     <a href="" target="_blank">View on GitHub</a>
+                  </div>
+               </div>
+               <div class="slide-image">
+                  <img src="assets/imageFeed.png" alt="Another Project screenshot">
+               </div>
             </div>
 
-            <div class="card">
-               <h2>Tracker</h2>
-               <p class="stack">Стек:</p>
-               <p>UIKit, MVP, CoreData, Метрики</p>
+            <!-- Четвертый слайд -->
+            <div class="slide">
+               <div class="slide-content">
+                  <div class="slide-title">
+                     <h2>Tracker</h2>
+                     <p>
+                        Приложение, в котором можно создавать события(трекеры) по категориям для определенной даты или
+                        дня. Можно отметить трекер выполненным, редактировать или удалить его.
+                     </p>
+                  </div>
+
+                  <div class="slide-stack">
+                     <p>Стек:</p>
+                     <p class="stack-list">UIKit, MVP, CoreData, Метрики</p>
+                     <a href="" target="_blank">View on GitHub</a>
+                  </div>
+               </div>
+               <div class="slide-image">
+                  <img src="assets/tracker.png" alt="Another Project screenshot">
+               </div>
             </div>
+
+
          </div>
-      </section>
+
+         <button class="prev" onclick="prevSlide()">
+            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M46.875 4.6875L18.75 37.5L46.875 70.3125" stroke="#707070" stroke-width="5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+         </button>
+         <button class="next" onclick="nextSlide()">
+            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M28.125 70.3125L56.25 37.5L28.125 4.6875" stroke="#707070" stroke-width="5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+         </button>
+      </div>
+
    </main>
 
    <footer>

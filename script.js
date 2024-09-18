@@ -10,3 +10,33 @@ function toggleTheme() {
       svgIcon.innerHTML = '<path d="M8.85425 31.156C8.85425 44.4109 19.5994 55.156 32.8542 55.156C42.9534 55.156 51.5955 48.9181 55.1382 40.0853C52.3739 41.1963 49.3491 41.8224 46.1875 41.8224C32.9326 41.8224 22.1876 31.0773 22.1876 17.8224C22.1876 14.6757 22.8045 11.6336 23.9055 8.87988C15.0829 12.4274 8.85425 21.0643 8.85425 31.156Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />'
    }
 }
+
+let currentIndex = 0;
+
+function showSlide(index) {
+   const slides = document.querySelector('.slides');
+   const totalSlides = document.querySelectorAll('.slide').length;
+
+   // Ensure the index is within bounds
+   if (index >= totalSlides) {
+      currentIndex = 0;
+   } else if (index < 0) {
+      currentIndex = totalSlides - 1;
+   } else {
+      currentIndex = index;
+   }
+
+   // Shift the slides container
+   slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+}
+
+function nextSlide() {
+   showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+   showSlide(currentIndex - 1);
+}
+
+// Automatically switch slides every 5 seconds
+// setInterval(nextSlide, 5000);
