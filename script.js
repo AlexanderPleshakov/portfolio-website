@@ -17,7 +17,6 @@ function showSlide(index) {
    const slides = document.querySelector('.slides');
    const totalSlides = document.querySelectorAll('.slide').length;
 
-   // Ensure the index is within bounds
    if (index >= totalSlides) {
       currentIndex = 0;
    } else if (index < 0) {
@@ -26,7 +25,6 @@ function showSlide(index) {
       currentIndex = index;
    }
 
-   // Shift the slides container
    slides.style.transform = `translateX(${-currentIndex * 100}%)`;
 }
 
@@ -38,5 +36,4 @@ function prevSlide() {
    showSlide(currentIndex - 1);
 }
 
-// Automatically switch slides every 5 seconds
-// setInterval(nextSlide, 5000);
+//setInterval(nextSlide, 5000);
